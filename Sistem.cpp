@@ -1,6 +1,11 @@
 #include "sistem.h"
 
 
+Sistem::Sistem()
+{
+    
+}
+
 // vectorleri iceren vectoru sistemlere yarýrýr. orginalvecktor 2600 elemanlýdýr. 2600/100 =26 sistem olusur. her sistem 100 organ icerir.
 vector<vector<IkiliAramaAgaci::Node*>> Sistem::splitIntoVectors(vector<IkiliAramaAgaci::Node*> originalVector) {
     vector<vector<IkiliAramaAgaci::Node*>> sistemler;
@@ -13,3 +18,4 @@ vector<vector<IkiliAramaAgaci::Node*>> Sistem::splitIntoVectors(vector<IkiliAram
     }
     return sistemler;
 }
+

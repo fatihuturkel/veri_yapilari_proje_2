@@ -60,14 +60,12 @@ int main() {
     // Close the input and output files
     infile.close();
     outfile.close();
-    cout << "File is complete.";
+    cout << "File is complete."<<endl;
 
-    Organ organ;
-	organ.organMaker(1);
+	Organ organ = Organ(1);
     
     IkiliAramaAgaci ikiliAramaAgaciNesnesi;
     ikiliAramaAgaciNesnesi.inOrder(organ.root);
-	//IkiliAramaAgaci::postOrder(organ.root);
     
     
     return 0;
