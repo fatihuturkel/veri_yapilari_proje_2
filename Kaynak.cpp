@@ -7,18 +7,10 @@
 * @author Gruptakilerin yazar adlarý ve mail adresleri
 */
 
-#include <string>
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <algorithm>
-#include <cstddef>
-#include <sstream>
-
-#include <iomanip>
 #include "radix.h"
 #include "sistem.h"
 #include "ikiliAramaAgaci.h"
+#include "Queue.h"
 using namespace std;
 
 Radix radix;
@@ -63,26 +55,28 @@ int main() {
     cout << "File is complete."<<endl;
 
 	Organ organ = Organ(1);
+    Organ organ2 = Organ(2);
+    Queue q;
+
+    q.enqueue(organ.root);
+    q.enqueue(organ2.root);
+
+    cout << "Front element is: " << q.front()->key << endl;
+    cout << "Queue size is: " << q.size() << endl;
+
+    q.dequeue();
+
+    cout << "Front element is: " << q.front()->key << endl;
+    cout << "Queue size is: " << q.size() << endl;
     
-    IkiliAramaAgaci ikiliAramaAgaciNesnesi;
-    ikiliAramaAgaciNesnesi.inOrder(organ.root);
-    
-    
+    IkiliAramaAgaci::inOrder(organ2.root);
+    cout << endl;
+    cout << organ.root->key<<endl;
+
+    Sistem sistem = Sistem(1);
+    cout << "cikarma islemi oncesi data:" << sistem.q.front()->key << endl;
+    sistem.q.dequeue();
+    cout<<" cikarma islemi sonrasý:"<<sistem.q.front()->key;
+
     return 0;
 }
-
-/*
-
-vector<vector<node*>> allVectors;
-int i = 0;
-while (i < originalVector.size()) {
-  vector<node*> newVector;
-  for (int j = 0; j < 100 && i < originalVector.size(); j++, i++) {
-    newVector.push_back(originalVector[i]);
-  }
-  allVectors.push_back(newVector);
-}
-
-
-*/
-

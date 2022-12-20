@@ -132,6 +132,7 @@
     <ClInclude Include="IkiliAramaAgaci.h" />
     <ClInclude Include="Organ.h" />
     <ClInclude Include="Organizma.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="Radix.h" />
     <ClInclude Include="Sistem.h" />
   </ItemGroup>
@@ -142,6 +143,7 @@
     <ClCompile Include="Kaynak.cpp" />
     <ClCompile Include="Organ.cpp" />
     <ClCompile Include="Organizma.cpp" />
+    <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Radix.cpp" />
     <ClCompile Include="Sistem.cpp" />
   </ItemGroup>

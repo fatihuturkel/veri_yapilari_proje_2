@@ -1,10 +1,10 @@
 #pragma once
 #include "organ.h"
+#include "queue.h"
 class Sistem
 {
 public:
-	Sistem();
-	vector<vector<IkiliAramaAgaci::Node*>> allVectors;
-	vector<vector<IkiliAramaAgaci::Node*>> splitIntoVectors(vector<IkiliAramaAgaci::Node*> originalVector);
+	Queue q;
+	Sistem(int sistemIndex);
 };
 

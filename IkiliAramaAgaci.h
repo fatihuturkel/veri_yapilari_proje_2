@@ -21,7 +21,7 @@ public:
 	Node* newNode(int key, vector<int> Doku);
 	Node* insert(Node* node, int key, vector<int> Doku);
 
-	void postOrder(Node* node);
-	void inOrder(Node* node);
+	static void postOrder(Node* node);
+	static void inOrder(Node* node);
 };
 
