@@ -1,6 +1,6 @@
 #pragma once
-#include "organ.h"
-#include "queue.h"
+#include "Organ.h"
+#include "Queue.h"
 class Sistem
 {
 public:

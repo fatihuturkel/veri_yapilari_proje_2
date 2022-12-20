@@ -1,5 +1,4 @@
-#include "sistem.h"
-
+#include "Sistem.h"
 
 Sistem::Sistem(int sistemIndex)
 {

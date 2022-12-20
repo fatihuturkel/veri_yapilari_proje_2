@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Doku.h" />
+    <ClInclude Include="File.h" />
     <ClInclude Include="Hucre.h" />
     <ClInclude Include="IkiliAramaAgaci.h" />
     <ClInclude Include="Organ.h" />
@@ -138,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Doku.cpp" />
+    <ClCompile Include="File.cpp" />
     <ClCompile Include="Hucre.cpp" />
     <ClCompile Include="IkiliAramaAgaci.cpp" />
     <ClCompile Include="Kaynak.cpp" />

@@ -1,8 +1,10 @@
 #pragma once
-#include "Doku.h"
+#include "Sistem.h"
+
 class Organizma
 {
 public:
-	
+	vector<Sistem> v;
+	Organizma();
 };
 

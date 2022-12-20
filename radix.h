@@ -5,6 +5,6 @@ using namespace std;
 class Radix
 {
 public:
-	void radix_sort(vector<int>& data);
+	static void radix_sort(vector<int>& data);
 };
 
