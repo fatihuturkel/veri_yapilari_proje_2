@@ -23,5 +23,6 @@ public:
 
 	static void postOrder(Node* node);
 	static void inOrder(Node* node);
+	static vector<int> postOrderReader(Node* node);
 };
 

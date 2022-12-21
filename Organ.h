@@ -11,7 +11,6 @@ public:
 	typedef IkiliAramaAgaci::Node* organ;
 	organ root;           
 	vector<organ> organs;  //new
-	void organMaker(int lineNumber);
 	void organMakerNew();  //new
 	//Organ(int lineNumber);
 };

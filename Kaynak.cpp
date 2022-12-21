@@ -1,85 +1,33 @@
 /**
 * @file veri_yapilari_proje_2
-* @description Programýnýzýn açýklamasý ne yaptýðýna dair.
-* @course Dersi aldýðýnýz eðitim türü ve grup
-* @assignment Kaçýncý ödev olduðu
-* @date Kodu oluþturduðunuz Tarih
-* @author Gruptakilerin yazar adlarý ve mail adresleri
+* @description veri.txt'den okunan veriler istenilen aðaç islemleri doðrulsunda ekrana cýktý verir.
+* @course 2. Öðretim B
+* @assignment 2
+* @date 22.12.2022
+* @author Fatih Uyvar Turkel fatihuyvar@gmail.com
 */
 
 #include "File.h"
 #include "Organizma.h"
+#include "Mutasyon.h"
 using namespace std;
 
 
 int main() {
     File::processFile("Veri.txt", "output.txt");
- 
-	/*Organ organ = Organ(1);
-    Organ organ2 = Organ(2);
-    Queue q;
-
-    q.enqueue(organ.root);
-    q.enqueue(organ2.root);
-
-    cout << "Front element is: " << q.front()->key << endl;
-    cout << "Queue size is: " << q.size() << endl;
-
-    q.dequeue();
-
-    cout << "Front element is: " << q.front()->key << endl;
-    cout << "Queue size is: " << q.size() << endl;
-    
-    IkiliAramaAgaci::inOrder(organ2.root);
-    cout << endl;
-    cout << organ.root->key<<endl;
-
-    Sistem sistem = Sistem(1);
-    cout << "cikarma islemi oncesi data:" << sistem.q.front()->key << endl;
-    sistem.q.dequeue();
-    cout<<" cikarma islemi sonrasi:"<<sistem.q.front()->key;
-    system("cls");
-    */
-    cout << "hey";
-    //Organizma organizma;
-    cout << "hey2" << endl;;
-    
-    
-    /*for (int i = 0; i < organizma.v.size(); i++)
-    {
-        for (int j = 0; j < organizma.v[i].q.size(); j++)
-        {            
-            if (IkiliAramaAgaci::isAVL(organizma.v[i].q.front())) {
-                cout << " ";
-            }
-            else {
-                cout << "#";
-            }
-            organizma.v[i].q.dequeue();
-        }
-        cout << endl;
-    }*/
-    /*
-    for (int i = 0; i < organizma.organizma.size(); i++)
-    {
-        for (int j = 0; j < organizma.organizma[i].sistem.size(); j++)
-        {
-            organ= organizma.organizma[i].sistem[j];
-            if (IkiliAramaAgaci::isAVL(organ)) {
-                cout << " ";
-            }
-            else {
-                cout << "#";
-            }
-        }
-        cout << endl;
-    }
-    */
-
+	char input;
+	
     Organ organNesnesi;
     organNesnesi.organMakerNew();
 	Sistem sistemNesnesi;
 	sistemNesnesi.vectorMakerNew(organNesnesi.organs);
 	Organizma organizmaNesnesi(sistemNesnesi.sistems);
+	Mutasyon mutasyonNesnesi;
+	cin >> input;
+	if (input==' ')
+	{
+		mutasyonNesnesi.mutationCheck(sistemNesnesi.sistems);
+	}
+	organizmaNesnesi;
     return 0;
 }

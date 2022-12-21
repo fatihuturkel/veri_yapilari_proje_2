@@ -131,6 +131,7 @@
     <ClInclude Include="File.h" />
     <ClInclude Include="Hucre.h" />
     <ClInclude Include="IkiliAramaAgaci.h" />
+    <ClInclude Include="Mutasyon.h" />
     <ClInclude Include="Organ.h" />
     <ClInclude Include="Organizma.h" />
     <ClInclude Include="Queue.h" />
@@ -143,6 +144,7 @@
     <ClCompile Include="Hucre.cpp" />
     <ClCompile Include="IkiliAramaAgaci.cpp" />
     <ClCompile Include="Kaynak.cpp" />
+    <ClCompile Include="Mutasyon.cpp" />
     <ClCompile Include="Organ.cpp" />
     <ClCompile Include="Organizma.cpp" />
     <ClCompile Include="Queue.cpp" />

@@ -1,6 +1,6 @@
 #include "Organizma.h"
 
-Organizma::Organizma(vector<vector<Organ::organ>> sistems)
+Organizma::Organizma(organizma sistems)
 {
 	for (int i = 0; i < sistems.size(); i++)
 	{

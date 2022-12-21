@@ -59,3 +59,12 @@ void IkiliAramaAgaci::inOrder(Node* node) {
 	cout << node->key << " ";
 	inOrder(node->right);
 }
+
+vector<int> IkiliAramaAgaci::postOrderReader(Node* node) {
+	if (node == NULL)
+		return vector<int>();
+
+	postOrderReader(node->left);
+	postOrderReader(node->right);
+	return node->doku;
+}

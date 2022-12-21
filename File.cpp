@@ -37,5 +37,4 @@ void File::processFile(string infileName, string outfileName) {
     // Close the input and output files
     infile.close();
     outfile.close();
-    cout << "File is complete." << endl;
 }
