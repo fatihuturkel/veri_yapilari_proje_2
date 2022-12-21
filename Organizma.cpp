@@ -1,11 +1,18 @@
 #include "Organizma.h"
 
-Organizma::Organizma()
+Organizma::Organizma(vector<vector<Organ::organ>> sistems)
 {
-	
-	for (int i = 1; i <= 16; i++)
+	for (int i = 0; i < sistems.size(); i++)
 	{
-		Sistem sistem(i);
-		v.push_back(sistem);
+		for (int j = 0; j < sistems[i].size(); j++)
+		{
+			if (IkiliAramaAgaci::isAVL(sistems[i][j])){
+				cout << " ";
+			}
+			else {
+				cout << "#";
+			}
+		}
+		cout << endl;
 	}
 }

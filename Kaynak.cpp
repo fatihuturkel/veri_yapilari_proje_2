@@ -15,7 +15,7 @@ using namespace std;
 int main() {
     File::processFile("Veri.txt", "output.txt");
  
-	Organ organ = Organ(1);
+	/*Organ organ = Organ(1);
     Organ organ2 = Organ(2);
     Queue q;
 
@@ -39,12 +39,13 @@ int main() {
     sistem.q.dequeue();
     cout<<" cikarma islemi sonrasi:"<<sistem.q.front()->key;
     system("cls");
-    
+    */
     cout << "hey";
-    Organizma organizma;
-    cout << "hey2";
+    //Organizma organizma;
+    cout << "hey2" << endl;;
     
-    for (int i = 0; i < organizma.v.size(); i++)
+    
+    /*for (int i = 0; i < organizma.v.size(); i++)
     {
         for (int j = 0; j < organizma.v[i].q.size(); j++)
         {            
@@ -57,7 +58,28 @@ int main() {
             organizma.v[i].q.dequeue();
         }
         cout << endl;
+    }*/
+    /*
+    for (int i = 0; i < organizma.organizma.size(); i++)
+    {
+        for (int j = 0; j < organizma.organizma[i].sistem.size(); j++)
+        {
+            organ= organizma.organizma[i].sistem[j];
+            if (IkiliAramaAgaci::isAVL(organ)) {
+                cout << " ";
+            }
+            else {
+                cout << "#";
+            }
+        }
+        cout << endl;
     }
-    
+    */
+
+    Organ organNesnesi;
+    organNesnesi.organMakerNew();
+	Sistem sistemNesnesi;
+	sistemNesnesi.vectorMakerNew(organNesnesi.organs);
+	Organizma organizmaNesnesi(sistemNesnesi.sistems);
     return 0;
 }

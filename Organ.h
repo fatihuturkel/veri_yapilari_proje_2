@@ -9,8 +9,10 @@ class Organ
 {
 public:
 	typedef IkiliAramaAgaci::Node* organ;
-	organ root;
+	organ root;           
+	vector<organ> organs;  //new
 	void organMaker(int lineNumber);
-	Organ(int lineNumber);
+	void organMakerNew();  //new
+	//Organ(int lineNumber);
 };
 

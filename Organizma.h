@@ -4,7 +4,6 @@
 class Organizma
 {
 public:
-	vector<Sistem> v;
-	Organizma();
+	Organizma(vector<vector<Organ::organ>> sistems);
 };
 
